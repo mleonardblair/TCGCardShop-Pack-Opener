@@ -1,7 +1,7 @@
 # TCG Card Shop Simulator Pack Opener Script
 
 ## Purpose
-This script automates the current dilemma in **TCG Card Shop Simulator** of opening card packs, which could be better than it is currently. I anticipate that the game's developer may choose to make timing changes to the pack opening flow, and with any new features, it is likely that will break this script as it relies on predicting current game timings and is not actually scanning any processes in the game. However, as of game version `v0.34`, it's functionally grabbing and opening packs.
+This script automates the current dilemma in **TCG Card Shop Simulator** of grabbing and opening any number of card packs.. I anticipate that the game's developer may choose to make timing changes to the pack opening flow, like number of packs to open options and with any new features, it is likely that will break this script as it relies on predicting current game timings and is not actually scanning any processes in the game. However, as of game version `v0.34`, it's functional.
 
 This works even with rare drops, as it has delays placed intentionally when the pack total value is being calculated that's slightly longer than it actually takes on purpose. This ensures that if you get many rare cards in the pack, it does not break the script timings, as rare cards have a slightly longer delay in the game before the next card appears.
 
