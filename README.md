@@ -7,9 +7,10 @@ This works even with rare drops that of live, stop the card opening flow. This s
 
 ## Usage
 To use this script:
-1. Double-click the script file `OpenPacks.ahk`.
-2. Press `1` on your keyboard to start the pack-opening process.
-3. After you're done, press `3` to quit out of the script, otherwise, it'll remain active and trigger whenever you press `1`.
+1. Download autohotkey.
+2. Double-click the script file `OpenPacks.ahk`.
+3. Press `1` on your keyboard to start the pack-opening process.
+4. After you're done, press `3` to quit out of the script, otherwise, it'll remain active and trigger whenever you press `1`.
 
 The number of hands and packs per hand can be set in an INI file you can open in a text editor like Notepad.
 # [Example: Opening 2 Hands of 3 Packs](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
