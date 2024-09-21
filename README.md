@@ -1,4 +1,4 @@
-# TCG Card Shop Simulator Pack Opener Script
+# TCG Card Shop Simulator  Pack Opener Script
 
 ## Purpose
 This script automates the process of opening card packs in the **TCG Card Shop Owner Simulator**, which is typically a tedious and repetitive task. As of game version `v0.34`, this script works reliably to grab and open packs, even handling rare drops that slow down the process.
@@ -14,7 +14,7 @@ The script accounts for rare card drops by implementing a slightly longer delay 
 3. Press `3` to exit the script once done or at any time. If you forget to do this, the script will continue to trigger whenever you press `1`.
 
 Example when configured for 2 hands of 3 packs each.
-[![Example Video](https://img.youtube.com/vi/Hz5wQup7_xo/0.jpg)](https://youtu.be/Hz5wQup7_xo)
+[![Watch the video](https://img.youtube.com/vi/G3QEsq1QnkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 ### Customization
 You can set the number of packs and hands to be processed by editing the `config.ini` file. Open this file in a text editor like Notepad to make changes. By default, the script processes four hands of eight packs, for a total of 32 packs.
 
