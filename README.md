@@ -1,24 +1,30 @@
-# TCG Card Shop Simulator  Pack Opener Script
+# TCG Card Shop Simulator Pack Opener Script
 
 ## Purpose
-This script automates the process of opening card packs in the **TCG Card Shop Owner Simulator**, which is typically a tedious and repetitive task. As of game version `v0.34`, this script works reliably to grab and open packs, even handling rare drops that slow down the process.
+This script automates the current dilemma in **TCG Card Shop Simulator** of opening card packs, which could be better than it is currently. I anticipate that the game's developer may choose to make timing changes to the pack opening flow, and new features, so it is likely that will break this script as it relies on predicting current game timings and is not actually scanning any processes in the game. However, as of game version `v0.34`, it's functionally grabbing and opening packs.
 
-Since the script relies on specific game timings and does not interact with the game’s internal processes, future game updates may break this functionality if timing changes are made. However, it has been tested with the current version and works as expected.
-
-### Handling Rare Drops
-The script accounts for rare card drops by implementing a slightly longer delay around the time that the pack total value is being calculated. This ensures that the script does not break overall due to the slight additional game delay introduced by a rare cards appearance, before the next card appears.
+This works even with rare drops, as it has delays placed intentionally when the pack total value is being calculated that's slightly longer than it actually takes on purpose. This ensures that if you get many rare cards in the pack, it does not break the script timings, as rare cards have a slightly longer delay in the game before the next card appears.
 
 ## Usage
-1. Double-click the script file `OpenPacks.ahk` to run it.
+To use this script:
+1. Double-click the script file `OpenPacks.ahk`.
 2. Press `1` on your keyboard to start the pack-opening process.
-3. Press `3` to exit the script once done or at any time. If you forget to do this, the script will continue to trigger whenever you press `1`.
+3. After you're done, press `3` to quit out of the script, otherwise, it'll remain active and trigger whenever you press `1`.
 
+The number of hands and packs per hand can be set in an INI file you can open in a text editor like Notepad.
 # [Example: Opening 2 Hands of 3 Packs](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 [![Watch the video](https://img.youtube.com/vi/G3QEsq1QnkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
-### Customization
-You can set the number of packs and hands to be processed by editing the `config.ini` file. Open this file in a text editor like Notepad to make changes. By default, the script processes four hands of eight packs, for a total of 32 packs.
 
-## Game Settings for Optimal Performance
+## Game Settings
+The script was created, debugged, and published on GitHub on **2024-09-20** with the following game settings:
+
+- **Settings > Game > Open Pack > Show New Card**: *Not checked*
+- **Settings > Game > Open Pack > Auto Next Card**: *Checked*
+
+## Customization
+You can customize the number of packs this script opens by modifying the configuration file in a text editor. By default, it will process four hands of eight packs for a total of 32 packs.
+
+## Required Game Settings
 To ensure the script works properly, make sure the following settings are applied in the game:
 
 - **Settings > Game > Open Pack > Show New Card**: *Not checked*
