@@ -13,7 +13,7 @@ The script accounts for rare card drops by implementing a slightly longer delay 
 2. Press `1` on your keyboard to start the pack-opening process.
 3. Press `3` to exit the script once done or at any time. If you forget to do this, the script will continue to trigger whenever you press `1`.
 
-Example when configured for 2 hands of 3 packs each.
+# [Example: Opening 2 Hands of 3 Packs](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 [![Watch the video](https://img.youtube.com/vi/G3QEsq1QnkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 ### Customization
 You can set the number of packs and hands to be processed by editing the `config.ini` file. Open this file in a text editor like Notepad to make changes. By default, the script processes four hands of eight packs, for a total of 32 packs.
