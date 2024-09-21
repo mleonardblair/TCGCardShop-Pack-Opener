@@ -94,7 +94,7 @@ openPacks(handNumber, packCount) {
             Sleep(3500)  ; Normal sleep duration for packs 1-7
             Loop 3
             {
-                Sleep(50)
+                Sleep(250)
                 Send("{LButton}")
             }
         }
@@ -111,6 +111,7 @@ openPacks(handNumber, packCount) {
         currentHand := A_Index  ; Tracks the current hand number
         grabPacks(currentHand, packCount)
         openPacks(currentHand, packCount)
+        Sleep(500)
     }
 
     ToolTip("All " packCount * handCount " packs and " (packCount * 8) * handCount " total cards opened!", x, y)  ; Notify user after all packs are opened
