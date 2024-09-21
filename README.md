@@ -6,7 +6,7 @@ This script automates the process of opening card packs in the **TCG Card Shop O
 Since the script relies on specific game timings and does not interact with the game’s internal processes, future game updates may break this functionality if timing changes are made. However, it has been tested with the current version and works as expected.
 
 ### Handling Rare Drops
-The script accounts for rare card drops by implementing a slightly longer delay when the pack total value is being calculated. This ensures that the script does not break due to the additional delay caused by rare cards before the next card appears.
+The script accounts for rare card drops by implementing a slightly longer delay around the time that the pack total value is being calculated. This ensures that the script does not break overall due to the slight additional game delay introduced by a rare cards appearance, before the next card appears.
 
 ## Usage
 1. Double-click the script file `OpenPacks.ahk` to run it.
