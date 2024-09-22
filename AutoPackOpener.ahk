@@ -59,7 +59,7 @@ openPacks(handNumber, packCount) {
 
         ; Wait until the money total is calculated
         ToolTip(handNumber " - Pack " packNumber "/" packCount " - Waiting for cash total to complete...")
-        Sleep(3750)  ; Sleep twice as long for the last packs
+        Sleep(4250)  ; Sleep twice as long for the last packs
 	Send("{LButton}")
 	if packCount == packNumber 
         {
