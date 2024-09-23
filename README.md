@@ -29,5 +29,7 @@ You can adjust the number of packs opened per session by modifying the values in
 - `handCount`: Number of hands to process (default is 4).
 
 ## Release Information
-This script was created, debugged, and published on GitHub on **2024-09-20**.
+- v0 beta Created, debugged, and published on **2024-09-20**.
+- Updated for release v1.0, for game version `v0.37` on **2024-09-23**.
+   - Resolved user-reported script performance inconsistencies by removing active game window focus from the card opening loop.
 
