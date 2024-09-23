@@ -43,7 +43,7 @@ openPacks(handNumber, packCount) {
             Sleep(50)  ; 0.05-second delay between card scans
         }
 
-        ToolTip(handNumber " - Pack " packNumber "/8 - Flipping through cards...")
+        ToolTip(handNumber " - Pack " packNumber "/" packCount " - Flipping through cards...")
         StartTime := A_TickCount  ; Record the start time
 
         ; Loop through scanning cards with a 50 ms delay between each click
