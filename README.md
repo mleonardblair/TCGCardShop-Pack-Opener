@@ -5,15 +5,6 @@ This script automates the current dilemma in **TCG Card Shop Simulator** of grab
 
 This works even with rare drops that of live, stop the card opening flow. This script removes you having to constantly click through if there is a rare card, and it has delays placed intentionally when the pack total value is being calculated at the end, that's slightly longer than it actually takes on purpose to ensure that if you get many rare cards in the pack, it does not break the script timings you can leave the room if you want. 
 
-## Note: The only time there will be a problem to my knowledge, is if you have many new cards like in a fresh new booster pack you are opening for the first time. 
-
-New cards have a slightly longer delay as the automatic pack opening simply stops flipping cards when a new card is encountered, no matter what game setting you have on, so to beat this there is LMB clicking in the script ongoing at certain times. The script waits for 4.5 seconds to give time for your game to "catch up" to normal operating timing, if enough new cards are in a row, it is possible for the delay caused by these new cards to stack and cause the script to "ditch" you and continue on as some have noted and as i've have observed myself. The script is built for a use case where you may have max 4/8 cards are new, however this can lead to issues if there are 5+ new cards per hand. Being aware of this you can prevent this occurring by doing one of two things:
-
-1) Modify the AHK script by opening in notepad and modifying the 75 loop to 95 loops, this will add an extra two seconds flat of clickthrough to account for the additional animation time delay of encountering new cards in the pack opening sequence, leaving less chance for you to get "lapped" by the script, as it proceeds on without you.
-2) Manually open maybe 32 - 64 packs, gain at least half of the new cards for that booster pack, and then you'll be able to use this script with confidence that it will not get "stuck" when you want to farm for higher rarity cards or when you are wanting to afk.
-
-I plan to do several recordings, eventually having recordings that cover 1 new card per hand all the way to optimally 8 new cards per hand, and afterward do an analysis to get the exact millisecond difference in delay of a seen vs never before seen card, of varying quantities. Eventually once i dial that in, one script will work in all circumstances, but I need to level up to 40 to get more new packs, or start a new game to run this experiement, so for now this is hacky workaround thats good for the meanwhile for anyone who cares to modify the script for their personal use case.
-
 ## Usage
 To use this script:
 1. Either run the exe or download autohotkey and run the uncompiled ahk script directly.
@@ -23,6 +14,15 @@ To use this script:
 The number of hands and packs per hand can be set in an INI file you can open in a text editor like Notepad.
 # [Example: Opening 2 Hands of 3 Packs](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 [![Watch the video](https://img.youtube.com/vi/G3QEsq1QnkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
+
+## Important Note: The only time there will be a problem to my knowledge, is if you have many new cards like in a fresh new booster pack you are opening for the first time. 
+
+New cards have a slightly longer delay as the automatic pack opening simply stops flipping cards when a new card is encountered, no matter what game setting you have on, so to beat this there is LMB clicking in the script ongoing at certain times. The script waits for 4.5 seconds to give time for your game to "catch up" to normal operating timing, if enough new cards are in a row, it is possible for the delay caused by these new cards to stack and cause the script to "ditch" you and continue on as some have noted and as i've have observed myself. The script is built for a use case where you may have max 4/8 cards are new, however this can lead to issues if there are 5+ new cards per hand. Being aware of this you can prevent this occurring by doing one of two things:
+
+1) Modify the AHK script by opening in notepad and modifying the 75 loop to 95 loops, this will add an extra two seconds flat of clickthrough to account for the additional animation time delay of encountering new cards in the pack opening sequence, leaving less chance for you to get "lapped" by the script, as it proceeds on without you.
+2) Manually open maybe 32 - 64 packs, gain at least half of the new cards for that booster pack, and then you'll be able to use this script with confidence that it will not get "stuck" when you want to farm for higher rarity cards or when you are wanting to afk.
+
+I plan to do several recordings, eventually having recordings that cover 1 new card per hand all the way to optimally 8 new cards per hand, and afterward do an analysis to get the exact millisecond difference in delay of a seen vs never before seen card, of varying quantities. Eventually once i dial that in, one script will work in all circumstances, but I need to level up to 40 to get more new packs, or start a new game to run this experiement, so for now this is hacky workaround thats good for the meanwhile for anyone who cares to modify the script for their personal use case.
 
 You can customize the number of packs this script opens by modifying the configuration file in a text editor. By default, it will process four hands of eight packs for a total of 32 packs.
 
