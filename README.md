@@ -15,16 +15,9 @@ The number of hands and packs per hand can be set in an INI file you can open in
 # [Example: Opening 2 Hands of 3 Packs](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 [![Watch the video](https://img.youtube.com/vi/G3QEsq1QnkQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=G3QEsq1QnkQ)
 
-## Game Settings
-The script was created, debugged, and published on GitHub on **2024-09-20** with the following game settings:
-
-- **Settings > Game > Open Pack > Show New Card**: *Not checked*
-- **Settings > Game > Open Pack > Auto Next Card**: *Checked*
-
-## Customization
 You can customize the number of packs this script opens by modifying the configuration file in a text editor. By default, it will process four hands of eight packs for a total of 32 packs.
 
-## Required Game Settings
+## Game Settings
 To ensure the script works properly, make sure the following settings are applied in the game:
 
 - **Settings > Game > Open Pack > Show New Card**: *Not checked*
