@@ -4,7 +4,7 @@
 This script automates the current dilemma in **TCG Card Shop Simulator** of grabbing and opening any number of card packs.. I anticipate that the game's developer may choose to make timing changes to the pack opening flow, like number of packs to open options and with any new features, it is likely that will break this script as it relies on predicting current game timings and is not actually scanning any processes in the game. However, as of game version ~~v0.34 v0.37~~ v0.38, it's functional.
 
 This works even with rare drops that of live, stop the card opening flow. This script removes you having to constantly click through if there is a rare card, and it has delays placed intentionally when the pack total value is being calculated at the end, that's slightly longer than it actually takes on purpose to ensure that if you get many rare cards in the pack, it does not break the script timings you can leave the room if you want. 
-
+### *Very Important* If you are not on a 1920 x 1080 display monitor you must manually change default to monitors resolution in the config.ini file!!! Pixel detection used requires scaling to resolution size, all 16:9 aspect ratios are supported, however, if you do not tell it what yours is, It will get stuck on flipping cards because its not scaling the functionality to your screen!!!
 ## Usage
 To use this script:
 1. Open the `config.ini` file:
