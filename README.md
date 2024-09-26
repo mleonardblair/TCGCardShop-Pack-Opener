@@ -17,7 +17,7 @@ The number of hands and packs per hand can be set in an INI file you can open in
 
 ### Important Note: The only time there will be a problem to my knowledge, is if you have many new cards like in a fresh new booster pack you are opening for the first time. 
 
-New cards have a slightly longer delay as the automatic pack opening simply stops flipping cards when a new card is encountered, no matter what game setting you have on, so to beat this there is LMB clicking in the script ongoing at certain times. The script waits for 4.5 seconds to give time for your game to "catch up" to normal operating timing, if enough new cards are in a row, it is possible for the delay caused by these new cards to stack and cause the script to "ditch" you and continue on as some have noted and as i've have observed myself. The script is built for a use case where you may have max 4/8 cards are new, however this can lead to issues if there are 5+ new cards per hand. Being aware of this you can prevent this occurring by doing one ~~of two~~ thing~~s~~:
+New cards have a slightly longer delay as the automatic pack opening simply stops flipping cards when a new card is encountered, no matter what game setting you have on, so to beat this there is LMB clicking in the script ongoing at certain times. The script waits for 4.5 seconds to give time for your game to "catch up" to normal operating timing, if enough new rare cards are in a row, it is possible for the delay caused by these new rare cards to stack and cause the script to "ditch" you and continue on as some have noted and as i've have observed myself. The script is built for a use case where you may have max 4/8 cards are new, however this can lead to issues if there are 5+ rare cards per hand. Being aware of this you can prevent this occurring by doing one ~~of two~~ thing~~s~~:
 
 ~~1) Modify the AHK script by opening in notepad and modifying the 75 loop to 95 loops, this will add an extra two seconds flat of clickthrough to account for the additional animation time delay of encountering new cards in the pack opening sequence, leaving less chance for you to get "lapped" by the script, as it proceeds on without you.~~ Edit: Don't try.
 ~~2~~ 1) Manually open maybe 32 - 64 packs, gain at least half of the new cards for that booster pack, and then you'll be able to use this script with confidence that it will not get "stuck" when you want to farm for higher rarity cards or when you are wanting to afk.
@@ -45,6 +45,10 @@ _*New*_
 - `boxCount`: Number of boxes to process (default is 2 boxes of 4 hands of 8 packs (64), when pressing 4 or 6 keybinds, 1 box when press keybind 1)
 ## Release Information
 - v0 beta Created, debugged, and published on **2024-09-20**.
-- Updated for release v1.0, for game version `v0.37` on **2024-09-23**.
+- Updated for beta release v0.1, for game version `v0.37` released on **2024-09-23**.
    - Resolved user-reported script performance inconsistencies by removing active game window focus from the card opening loop.
-- Added in player movement, so that it can process up to 
+- v0.2 beta - or game version `v0.38` patched on **2024-09-2024** that I will release TBD .
+    - Added in new keybinds to auto pack opener for player movement, left and right, so that it can process up to nth number of shelves/boxes the user defines in config.ini.
+    - Updated tooltip that displays progress of the current box out of the total user defined box number that will be opened.
+    - *WIP* Updated to support new v0.38 setting of fast pack opening, controllable via user defined value in config.ini.
+   
