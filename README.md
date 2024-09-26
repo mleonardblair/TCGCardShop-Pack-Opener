@@ -7,9 +7,12 @@ This works even with rare drops that of live, stop the card opening flow. This s
 
 ## Usage
 To use this script:
-1. Either run the exe or download [autohotkey](https://www.autohotkey.com/) and run the uncompiled ahk script directly.
-2. Press `1` on your keyboard to start the pack-opening process for a single box. (32 default)
-3. Press `4` or `6` to open multiple boxes/shelves. (Default is 2 shelves or 64 packs total, 32 packs per shelf)
+1. Open the `config.ini` file:
+   - if your monitor resolution is not `1920 x 1080` , replace the `width` and `height`values with your monitors values.
+   - if the new pack opening in-game speed is not set to max, then `speed` should be set to 1. (10 is default max speed)
+2. Either run the exe or download [autohotkey](https://www.autohotkey.com/) and run the uncompiled ahk script directly.
+3. To open one box - Press `1` on your keyboard to start the pack-opening process for a single box. (32 default)
+3. To open multiple boxes - `4` or `6` to open multiple boxes/shelves. (Default is 2 shelves or 64 packs total, 32 packs per shelf)
    - `4` Will move your character left after each shelf is cleared, meaning you must **start at the rightmost shelf**.
    - `6` Will move your character right after each shelf is cleared, meaning you must **start at the leftmost shelf**.
 4. After you're done, press `3` to quit out of the script, otherwise, it'll remain active and trigger whenever you press `1`.
