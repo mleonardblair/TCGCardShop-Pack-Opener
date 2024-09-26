@@ -1,4 +1,4 @@
-# TCG Card Shop Simulator Pack Auto Opener
+# TCG Card Shop Simulator | Auto Pack Opener
 
 ## Purpose
 This script automates the current dilemma in **TCG Card Shop Simulator** of grabbing and opening any number of card packs.. I anticipate that the game's developer may choose to make timing changes to the pack opening flow, like number of packs to open options and with any new features, it is likely that will break this script as it relies on predicting current game timings and is not actually scanning any processes in the game. However, as of game version ~~v0.34~~ v0.37, it's functional.
