@@ -43,15 +43,34 @@ scaleCoordinates(coord) {
     return [Round(coord[1] * scaleX), Round(coord[2] * scaleY)]
 }
 
+if (userWidth == 1680 && userHeight == 1050) {
+    ; Coordinates for 1680x1050 resolution
+    coord1 := [701, 146]
+    coord2 := [837, 362]
+    coord3 := [701, 249]
+    coord4 := [884, 921]
+    coord5 := [1070, 917]
+	colorRarePack1 := 0XFFFF98  
+	colorRarePack2 := 0X6B92A8   
+	colorRarePack3 := 0XFFDC4A  
+    colorTV1 := 0XF1EBA7
+    colorTV2 := 0XF7F1AB
+    x := 828
+    y := 945
+    ; Colors remain the same
+} else {
+    ; Existing scaling method for 16:9 resolutions
+    scaleX := userWidth / defaultWidth
+    scaleY := userHeight / defaultHeight
 
-; Set global variables for tooltip position
-x := 810 * scaleX
-y := 935 * scaleY
-coord1 := scaleCoordinates(coord1)
-coord2 := scaleCoordinates(coord2)
-coord3 := scaleCoordinates(coord3)
-coord4 := scaleCoordinates(coord4)
-coord5 := scaleCoordinates(coord5)
+    coord1 := scaleCoordinates(coord1)
+    coord2 := scaleCoordinates(coord2)
+    coord3 := scaleCoordinates(coord3)
+    coord4 := scaleCoordinates(coord4)
+    coord5 := scaleCoordinates(coord5)
+    x := 810 * scaleX
+    y := 935 * scaleY
+}
 
 tvColorMatched := false
 colorMatched := false
@@ -100,7 +119,7 @@ HoldDKey(duration) {
 ; Function to grab packs
 grabPacks(handCount, handNumber, packCount) {
     global x, y
-  
+    Sleep(500)
     ToolTip(handNumber " - Pressing and holding right mouse button to grab " packCount " packs...", x, y) 
     StartTime := A_TickCount  ; Record the start time
     Click("right down")  ; Hold the right mouse button
@@ -120,7 +139,7 @@ openPacks(handCount, handNumber, packCount, boxNumber, maxEightHands := true) { 
     global x, y, colorMatched, tvColorMatched
     Loop packCount
     {
-	Sleep(250)  ;
+	Sleep(350)  ;
         packNumber := A_Index  ; Get current pack number
 
         ToolTip((!maxEightHands ? "Box " boxNumber "/" boxCount " - " : "") "Hand " handNumber "/" handCount " - Pack " packNumber "/" packCount " - Selecting a pack...", x, y)
